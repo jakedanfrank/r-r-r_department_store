@@ -6,6 +6,7 @@ import Stores from "./components/Stores";
 import StoreView from "./components/StoreView";
 import Home from "./components/Home";
 import About from "./components/About";
+import Items from "./components/Items";
 import NoMatch from "./components/NoMatch";
 import { Container, } from "semantic-ui-react";
 
@@ -20,6 +21,7 @@ const App = () => (
           <Route exact path="/stores" component={Stores} />
           <Route exact path="/stores/new" component={StoresForm} />
           <Route exact path="/stores/:id" component={StoreView} />
+          <Route exact path="/:store_id/items/" componet={Items} />
           <Route component={NoMatch} />
         </Switch>
       </Container>

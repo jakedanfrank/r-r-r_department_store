@@ -1,7 +1,7 @@
 import React, { Component, } from "react";
 import { Card, Header, Button, } from "semantic-ui-react";
 import { Link, } from "react-router-dom";
-
+import styled from "styled-components";
 import axios from "axios";
 
 
@@ -40,7 +40,7 @@ class Stores extends Component {
   render() {
     return (
       <div>
-        <Header as="h1">Stores</Header>
+        <Header as="h1" textAlign="center">Stores</Header>
         <br />
         <Button as={Link} color="black" to="/stores/new">
           Add Store

@@ -6,7 +6,7 @@ class StoreView extends Component {
   state = { store: {}, };
 
   componentDidMount() {
-    axios.get(`/api/products/${this.props.match.params.id}`)
+    axios.get(`/api/stores/${this.props.match.params.id}`)
       .then( response => {
         this.setState({ store: response.data, });
       })
